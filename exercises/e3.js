@@ -16,7 +16,19 @@
 
 // Your code goes here...
 
+function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
+    if (!arr.length) return false;
+    for (var i = 0; i < arr.length; i++) {
 
+    if  (arr[i] > val1 && arr[i] < val2) 
+        return true;
+    }
+    return false;
+}
+
+console.log(doesArrayIncludeItemsBetweenVals([2, 4, 2], 3, 5));
+
+console.log(doesArrayIncludeItemsBetweenVals([2, 4, 2], 5, 10));
 
 
 /**
@@ -35,6 +47,36 @@
  */
 
 // Your code goes here...
+function getValueWithConditionOne(arg1, arg2) {
+    if (arg1 === 40 && arg2 === 40) {
+        return arg1 + arg2;
+    } else if (arg1 != 40 || arg2 != 40) {
+        return (arg1 + arg2) * 2;
+    }
+    }
+
+console.log(getValueWithConditionOne(40, 40));
+console.log(getValueWithConditionOne(20, 30));
+
+const getValueWithConditionTwo = (arg1, arg2) => {
+    if (arg1 === 40 && arg2 === 40) {
+        return arg1 + arg2;
+    } else (arg1 != 40 || arg2 != 40) 
+        return (arg1 + arg2) * 2;
+    }
+
+console.log(getValueWithConditionTwo(40, 40));
+console.log(getValueWithConditionTwo(20, 30));
+
+const getValueWithConditionThree = function (arg1, arg2) {
+    if (arg1 === 40 && arg2 === 40) {
+        return arg1 + arg2;
+    } else (arg1 != 40 || arg2 !== 40) 
+        return (arg1 + arg2) * 2;
+    }
+
+console.log(getValueWithConditionThree(40, 40));
+console.log(getValueWithConditionThree(20, 30));
 
 
 

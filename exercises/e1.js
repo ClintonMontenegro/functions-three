@@ -35,7 +35,12 @@ logMessage();
 
 // Your code goes here...
 
+function logMyMessage(myMessage) {
 
+    console.log(myMessage);
+}
+
+logMyMessage('I logged my first message!');
 
 
 /**
@@ -50,6 +55,13 @@ logMessage();
 
 // Your code goes here...
 
+function logMessageWithMyName(n) {
+
+
+    console.log('My name is ' + n + '!');
+    }
+    
+    logMessageWithMyName('Andrey');
 
 
 
@@ -66,6 +78,11 @@ logMessage();
 
 // Your code goes here...
 
+function logMyInfo(name, age) {
+    console.log('My name is ' + name + '. I am ' + age + ' years old!');
+}
+
+logMyInfo('Andrey', 18);
 
 
 

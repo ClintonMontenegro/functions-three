@@ -12,7 +12,16 @@
  */
 
 // Your code goes here...
-
+const getDiffTwentySeven = (num) => {
+    if (num < 27 && num - 27 < 27) {
+        return 27 - num;
+    } else (num > 27 && num - 27 > 27) 
+        return (num - 27)*2;
+    
+ }
+ 
+console.log(getDiffTwentySeven(13));
+console.log(getDiffTwentySeven(37));
 
 
 
@@ -24,7 +33,15 @@
  */
 
 // Your code goes here
-
+const sumOfTwoIntegers = (num1, num2) => {
+    if (num1 != num2) {
+        return num1 + num2;
+    }  else (num1 === num2) 
+        return (num1 + num2)*3;   
+}
+ 
+console.log(sumOfTwoIntegers(13, 14));
+console.log(sumOfTwoIntegers(12, 12));
 
 
 
@@ -38,7 +55,15 @@
  */
 
 // Your code goes here...
-
+const isOneOfThemOrTheirSumIsFourty = (num1, num2) => {
+    if (num1 === 40 || num2 === 40 || num1 + num2 === 40) {
+        return true;
+    } return false;
+}
+ 
+console.log(isOneOfThemOrTheirSumIsFourty(40, 13));
+console.log(isOneOfThemOrTheirSumIsFourty(22, 18));
+console.log(isOneOfThemOrTheirSumIsFourty(23, 16));
 
 
 
